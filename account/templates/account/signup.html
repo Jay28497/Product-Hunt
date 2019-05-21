@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+
+<title>Login Page</title>
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+
+<form class="box" method="POST" action="{% url 'signup' %}">
+  {% csrf_token %}
+  <h1>Create a new account</h1>
+  <h4 style="color:red;">{{ error }}</h4>
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password1" placeholder="Password">
+  <input type="password" name="password2" placeholder="Confirm Password">
+  <input type="submit" name="submit" value="SignUp"/>
+</form>
+
+{% endblock %}
