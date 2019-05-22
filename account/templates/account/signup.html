@@ -5,10 +5,10 @@
 {% load static %}
 <!DOCTYPE html>
 
-<title>Login Page</title>
+<title>SignUp Page</title>
 <link rel="stylesheet" href="{% static 'css/signup.css' %}">
 
-<form class="box" method="POST" action="{% url 'signup' %}">
+<form class="box" action="{% url 'signup' %}" method="POST">
   {% csrf_token %}
   <h1>Create a new account</h1>
   <h4 style="color:red;">{{ error }}</h4>
