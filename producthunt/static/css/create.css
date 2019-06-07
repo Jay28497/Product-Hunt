@@ -4,6 +4,9 @@ body{
   font-family: sans-serif;
   background: #34495e;
 }
+#icon, #image{
+  display: none;
+}
 
 .box{
   width: 500px;
@@ -19,7 +22,7 @@ body{
   font-size: 500;
 }
 
-.box input[type = "text"], .box input[type = "password"], .box input[type = "textbox"], .box input[type = "file"]{
+.box input[type = "text"], .box input[type = "password"], .box input[type = "textbox"], .box input[type = "file"], label{
   border: 0;
   background: none;
   display: block;

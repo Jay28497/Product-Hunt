@@ -10,7 +10,8 @@ body{
   padding: 40px;
   background: #191919;
   text-align: center;
-  margin: 40px auto;
+  margin: 10px auto;
+  margin-top: 40px;
 }
 
 .box h1{
